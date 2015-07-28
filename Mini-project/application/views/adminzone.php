@@ -53,7 +53,7 @@
 		html,
 		body {
 		/*css for full size background image*/
-		  background: url(img/11.jpg) no-repeat center center fixed; 
+		  background: <?php echo base_url('img/55.jpg');?> no-repeat center center fixed; 
 		  -webkit-background-size: cover;
 		  -moz-background-size: cover;
 		  -o-background-size: cover;
