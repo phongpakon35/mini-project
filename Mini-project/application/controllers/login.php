@@ -45,12 +45,13 @@
     			//echo 'Pass';
     			setcookie('username',$this->input->post('username'),(time()+3600),'/');
     			setcookie('password',$this->input->post('password'),(time()+3600),'/');
-                redirect(base_url('index.php/adminzone'));
+                redirect(base_url('index.php/updatebook/checkupdate'));
     		}
     		else
     		{
     			//ถ้าไม่ผ่าน
-    			echo 'Fail';
+    			
+                echo "<script language='javascript'>alert('กรุณากรอกข้อมูลให้ครบถ้วนถูกต้อง!');</script>";
 
     		}
     		

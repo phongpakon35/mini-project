@@ -282,7 +282,12 @@
 		} 
 		
 
-	</style>
+
+
+</style>
+
+
+
 
 
 	
@@ -314,11 +319,11 @@
 		      <div class="inner cover">
 		        <h1 class="cover-heading">ยินดีต้อนรับสู่ระบบค้นหาหนังสือ</h1>
 
-		        <p class="lead">สะดวกสบาย ค้นหาแล้วเดินไปหยิบหนังสือ ไม่ต้องไปเดินหาให้ปวดหัว
+		        <p class="lead">สะดวกสบาย ค้นหาแล้วเดินไปหยิบหนังสือ ไม่ต้องเดินหาให้ปวดหัว
 		       
 		        </p>
 
-		        <p class="lead"><a class="btn btn-lg btn-info" href="#">ค้นหาหนังสือ</a></p>
+		        <p class="lead"><a class="btn btn-lg btn-info" href="<?php echo base_url('index.php/search');?>">ค้นหาหนังสือ</a></p>
 		      </div>
 
 		      <div class="mastfoot">
@@ -338,7 +343,7 @@
 
 
 
-		          <p>Template by<a href=
+		          <p>Template by.<a href=
 		          "http://bootsnipp.com//"> bootsnipp</a></p>
 		        </div>
 		      </div>

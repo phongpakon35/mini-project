@@ -1,4 +1,4 @@
-<?php                																		//********15/7/15*****Login and logout สร้าง cookie
+<?php                																		
 
 class Book extends CI_model        
 {
@@ -56,7 +56,7 @@ class Book extends CI_model
 		return $this->author;
 	}
 
-
+###################################### add ######################################	 
 
 	public function add()
 	{
@@ -73,8 +73,24 @@ class Book extends CI_model
 		return $this->db->insert_id();
 	}
 
-	
+###################################### add ######################################	 	
 
+
+###################################### findByName ######################################	 
+	 public function findByName($name)
+	{
+		$query=$this->db->query
+			('
+				SELECT bookname, ISBN, author
+		
+				FROM book  WHERE bookname LIKE "%'. $name .'%" OR
+        				         ISBN LIKE "'. $name .'" OR
+        				         author LIKE "%'. $name .'%" ORDER BY bookname
+			');
+
+		return $query;
+	}
+###################################### findByName ######################################	 
 
 }
 ?>
